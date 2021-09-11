@@ -13,8 +13,8 @@ Samples were acquired with an overlap rate of 20% to provide more exhaustive and
 ![Data Processing Pipeline](https://drive.google.com/uc?export=view&id=1_rYuQza2IhMOcZzisKKAakbY35yFGXxd)
 
 A notebook for converting Dataset-2 EEG values to spectrograms, and a set of sample spectrogram images can be found in the files below:
-   \Spectrogram Generators\Spectrogram_Generator_for_Dataset-2_(bio_msu_ru)_All_Channels_fractional_noverlap_SML.ipynb\
-   \Data\Extracted\Sample_Spectrograms\
+   /Spectrogram Generators/Spectrogram_Generator_for_Dataset-2_(bio_msu_ru)_All_Channels_fractional_noverlap_SML.ipynb\
+   /Data/Extracted/Sample_Spectrograms
 
 
 
@@ -26,19 +26,19 @@ In an additional set of experiments with MAML, pre-training was performed with m
    /MLModels/Meta Learning Models/MAML_Pytorch_with_further_training_Test_Dataset-1.ipynb\
    /MLModels/Meta Learning Models/MAML_Pytorch_with_further_training_Test_Dataset-2.ipynb\
    /MLModels/Meta Learning Models/Prototypical_Networks_with_Dataset-1.ipynb\
-   /MLModels/Meta Learning Models/Prototypical_Networks_with_Dataset-2.ipynb\
+   /MLModels/Meta Learning Models/Prototypical_Networks_with_Dataset-2.ipynb
 
 ### Results
 | Network Name                       | Val Loss | Val Acc | Test Acc | Test AUC | Test F1 Macro |
 |------------------------------------|----------|---------|----------|----------|---------------|
-| **Dataset-1**                      |          |         |          |          |               |
+| **Dataset-1**                                                                                 |
 | CNN                                | 1.6223   | 0.5000  | 0.6646   | 0.8128   | 0.6468        |
 | CNN + Fine Tuning                  | 0.6348   | 0.5455  | 0.5021   | 0.5014   | 0.3579        |
 | Prototypical Networks + CNN        | 0.0112   | 0.9977  | 0.9768   | 0.9772   | 0.9768        |
 | MAML + CNN                         | 0.5000   | 0.8945  | 0.8420   | 0.8426   | 0.8419        |
 | MAML + CNN with Further Training   | 0.2184   | 0.9342  | 0.9683   | 0.9342   | 0.9341        |
 |                                    |          |         |          |          |               |
-| **Dataset-2**                      |          |         |          |          |               |
+| **Dataset-2**                                                                                 |
 | CNN                                | 0.0000   | 1.0000  | 1.0000   | 1.0000   | 1.0000        |
 | CNN + Fine Tuning                  | 0.5805   | 0.5014  | 0.6814   | 0.6892   | 0.6560        |
 | Prototypical Networks + CNN        | 0.5980   | 0.8333  | 0.8587   | 0.8580   | 0.8584        |
@@ -50,3 +50,17 @@ In an additional set of experiments with MAML, pre-training was performed with m
 This repository contains additional feature extraction methods and ML experiments which were not included in the workshop paper.
 The notebooks mentioned above are intended to be executed on Google Colab.
 
+### Datasets
+#### Dataset-1
+Olejarczyk, E.; and Jernajczyk, W. 2017. EEG in Schizophrenia.\
+doi:10.18150/repod.0107441. URL https://doi.org/10.18150/repod.0107441.
+
+#### Dataset-2
+Gorbachevskaya, N. N.; and Borisov., S. V. 2015. EEG of healthy adolescents and\
+adolescents with symptoms of schizophrenia. EEG Database - Schizophrenia\
+URL http://brain.bio.msu.ru/eeg_schizophrenia.htm.
+
+#### Mini-ImageNet
+Vinyals, O.; Blundell, C.; Lillicrap, T.; Wierstra, D.; et al. 2016. Matching networks\
+for one shot learning.\
+In Advances in neural information processing systems, 3630–3638.
