@@ -13,20 +13,20 @@ Samples were acquired with an overlap rate of 20% to provide more exhaustive and
 ![Data Processing Pipeline](https://drive.google.com/uc?export=view&id=1_rYuQza2IhMOcZzisKKAakbY35yFGXxd)
 
 A notebook for converting Dataset-2 EEG values to spectrograms, and a set of sample spectrogram images can be found in the files below:
-   \Spectrogram Generators\Spectrogram_Generator_for_Dataset-2_(bio_msu_ru)_All_Channels_fractional_noverlap_SML.ipynb 
-   \Data\Extracted\Sample_Spectrograms 
+   \Spectrogram Generators\Spectrogram_Generator_for_Dataset-2_(bio_msu_ru)_All_Channels_fractional_noverlap_SML.ipynb\
+   \Data\Extracted\Sample_Spectrograms\
 
 
 
 For both EEG datasets, MAML and prototypical networks were used to train and test the model.
 In an additional set of experiments with MAML, pre-training was performed with miniImageNet, followed by further training with Dataset-2 and testing with Dataset-1 (and the reverse).
 
-   /MLModels/Meta Learning Models/MAML_Pytorch_with_Dataset-1.ipynb
-   /MLModels/Meta Learning Models/MAML_Pytorch_with_Dataset-2.ipynb
-   /MLModels/Meta Learning Models/MAML_Pytorch_with_further_training_Test_Dataset-1.ipynb
-   /MLModels/Meta Learning Models/MAML_Pytorch_with_further_training_Test_Dataset-2.ipynb
-   /MLModels/Meta Learning Models/Prototypical_Networks_with_Dataset-1.ipynb
-   /MLModels/Meta Learning Models/Prototypical_Networks_with_Dataset-2.ipynb
+   /MLModels/Meta Learning Models/MAML_Pytorch_with_Dataset-1.ipynb\
+   /MLModels/Meta Learning Models/MAML_Pytorch_with_Dataset-2.ipynb\
+   /MLModels/Meta Learning Models/MAML_Pytorch_with_further_training_Test_Dataset-1.ipynb\
+   /MLModels/Meta Learning Models/MAML_Pytorch_with_further_training_Test_Dataset-2.ipynb\
+   /MLModels/Meta Learning Models/Prototypical_Networks_with_Dataset-1.ipynb\
+   /MLModels/Meta Learning Models/Prototypical_Networks_with_Dataset-2.ipynb\
 
 ### Results
 | Network Name                       | Val Loss | Val Acc | Test Acc | Test AUC | Test F1 Macro |
